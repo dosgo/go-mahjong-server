@@ -49,7 +49,7 @@ func InsertTrade(t *model.Trade) error {
 	//添加首充时间
 	if u.FirstRechargeAt == 0 {
 		u.FirstRechargeAt = order.CreatedAt
-		if _, err = sess.Id(u.Id).Update(u); err != nil {
+		if _, err = sess.Update(u); err != nil {
 			sess.Rollback()
 			return err
 		}
