@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/go-xorm/core"
+	"xorm.io/core"
 	log "github.com/sirupsen/logrus"
 )
 
