@@ -6,7 +6,7 @@ import (
 	"go-mahjong-server/db/model"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/xorm"
+	"xorm.io/xorm"
 	log "github.com/sirupsen/logrus"
 )
 
